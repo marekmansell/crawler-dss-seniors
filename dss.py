@@ -11,6 +11,8 @@ dss_url = "https://www.employment.gov.sk/sk/centralny-register-poskytovatelov-so
 		  "&searchBean.typPoskytovatela=" \
 		  "&btnSubmit=Vybra%C5%A5"
 
+# Change to your absolute path of the gecko executable
+# Remember to download a geckodriver for your OS, the one in this REPO is for Linux
 driver = webdriver.Firefox(executable_path='/home/marek/Desktop/del/dss/geckodriver')
 
 for page_id in range (1, 62):
